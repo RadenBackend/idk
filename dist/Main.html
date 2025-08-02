@@ -8,6 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+      .article-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+
+      .gradient-text {
+        -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(90deg, #3B82F6, #10B981);
+      }
+    </style>
   </head>
       <body class="bg-[#052659] h-screen overflow-x-hidden">
      <nav class="bg-blue-100 px-4 py-3 flex items-center gap-3 rounded-t-xl">
@@ -16,15 +29,15 @@
   <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
 </svg>
     </div>
-    <a href="#About" class="font-medium text-lg text-indigo-500 tracking-wide hover:underline">
+    <a href="#About" class="text-2xl font-bold gradient-text tracking-wide hover:transition-all">
       About
       </a>
          </nav>
-         <div id="About" class="bg-[#021024] rounded-lg container mx-1 flex flex-col items-start justify-start h-[200px] w-auto mt-6 p-2">
+         <div id="About" class="bg-[#021024] rounded-lg shadow-lg mx-1 flex flex-col items-start justify-start w-auto mt-6 p-4 max-w-xl">
   <h1 class="font-sourcecode text-white text-base mb-2">About me</h1>
   <p class="font-sourcecode text-white text-sm">
     <span class="text-white font-medium">Kevan</span>, a 14-year-old enthusiast who's currently exploring the world of web development. I'm now focusing on learning 
-    <span class="text-indigo-400 font-medium">Tailwind CSS</span> to build <a class="underline decoration-indigo-500">beautiful</a> and responsive user interfaces. Every day I improve my coding skills and build cool projects!
+    <span class="text-indigo-400 font-medium">Tailwind CSS</span> to build beautiful and responsive user interfaces. Every day I improve my coding skills and build cool projects!
   </p>
 </div>
  <div class="overflow-x-auto">
@@ -52,7 +65,7 @@
     </div>
   </div>
 </div>
-<div class="mt-4 bg-[#021024] rounded-lg min-w-[200px] p-4 h-auto mr-2 ml-2">
+<div class="mt-4 bg-[#021024] rounded-lg min-w-[200px] p-4 h-auto mr-2 ml-2 overflow-hidden transition-all article-card">
 <h2 class="font-sourcecode text-white relative w-[max-content] text-base before:absolute before:inset-0 before:animate-typewriter before:bg-[#021024] after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-white px-1 mt-1">
 Where do I go to school?
 </h2>

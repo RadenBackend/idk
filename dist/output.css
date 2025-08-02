@@ -623,6 +623,11 @@ video {
   display: flex;
 }
 
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .h-16 {
   height: 4rem;
 }
